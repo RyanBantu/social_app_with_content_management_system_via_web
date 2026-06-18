@@ -1,0 +1,13 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /content/{document=**} {
+      allow read: if !('published' in resource.data) || resource.data.published == true;
+      allow write: if false;
+    }
+    match /config/{document=**} {
+      allow read: if true;
+      allow write: if false;
+    }
+  }
+}

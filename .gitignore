@@ -1,0 +1,25 @@
+# Secrets
+backend/.env
+backend/serviceAccountKey.json
+admin-web/.env
+admin-web/.env.local
+**/GoogleService-Info.plist
+**/google-services.json
+mhc_app/lib/firebase_options.dart
+
+# Python
+backend/__pycache__/
+backend/.venv/
+*.pyc
+
+# Node
+admin-web/node_modules/
+admin-web/dist/
+
+# Flutter
+mhc_app/.dart_tool/
+mhc_app/build/
+mhc_app/.flutter-plugins-dependencies
+
+# OS
+.DS_Store
